@@ -24,4 +24,5 @@ define('PRODUCTOS_VIEW_PATH', PRODUCTOS_PATH . '/vista');
 define('PRODUCTOS_CONTROLLER_PATH', PRODUCTOS_PATH . '/controlador');
 // Incluir archivo de conexión a la base de datos
 require_once __DIR__ . '/conexion.php';
-?>
+
+

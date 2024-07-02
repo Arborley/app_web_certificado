@@ -11,3 +11,4 @@ switch($action) {
     consulta();
     break;
 }
+
