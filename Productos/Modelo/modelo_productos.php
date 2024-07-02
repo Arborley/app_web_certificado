@@ -1,18 +1,32 @@
 <?php
-require_once __DIR__ . '/../config.php';
+require_once "../../config.php";
 
+// Creamos la funcion limpiar_dato
+function limpiar_datos($data){
+    $data=trim($data);
+    $data=stripslashes($data);
+    $data=htmlspecialchars($data);
+    return $data;
+}
 
-
-//Función para recoger todos los productos de la base de datos
-
-function recoger_productos() {
+// Funcion para consultar el producto
+function consultar_productos($id) {
     $pdo = conectarBD();
-    $stmt = $pdo->query('SELECT * FROM productos WHERE activo = 1');
+    $stmt = $pdo->query("SELECT p.id_producto, p.nombre AS producto, p.descripcion, p.precio, p.impuesto, c.nombre AS categoria, c.tasa_iva FROM productos p JOIN categorias c ON p.id_categoria=c.id_categoria WHERE id_producto = $id AND p.activo = 1 AND c.activo = 1 ");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function listar_productos() {
-    $productos = recoger_productos();
-    require VIEW_PATH . '../vista/listar_productos.php';
+// 
+function consulta() {
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        // Validar y limpiar datos
+        $id=limpiar_datos($_POST['id']);
+        // Validación básica
+        if(empty($id)) {
+            echo'Todos los campos son obligatorios';
+        } else {
+            $productos = consultar_productos($id);
+            require PRODUCTOS_PATH . "../vista/pantalla_consultar.php";
+        }
+    }
 }
-?>

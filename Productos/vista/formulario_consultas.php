@@ -23,7 +23,7 @@
                             <button type="submit" class="btn btn-primary">Consulta</button>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
-                            <a href="http://localhost:8080/hilariocurso/Equipo1/app_web/" class="btn btn-success">Volver</a>
+                            <a href="../index_productos.php" class="btn btn-success">Volver</a>
                         </div> 
                     </div>
                 </form>
