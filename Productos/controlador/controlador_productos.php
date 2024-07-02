@@ -1,7 +1,9 @@
 <?php
-require_once "../config.php";
-require_once MODEL_PATH ."modelo_funcion.php";
+// Incluir el archivo de configuración
+require_once __DIR__ . '../../../config.php';
 
+// Incluir el modelo de contactos
+require_once PRODUCTOS_MODEL_PATH . '/modelo_productos.php';
 $action = $_GET['action'];
 
 switch($action) {

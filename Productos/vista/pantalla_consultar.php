@@ -1,4 +1,4 @@
-<?php   include_once "../config.php";?>
+<?php   include_once "../../config.php";?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -41,7 +41,7 @@
         <br>
         <div class="row">                    
                 <div class="col-md-12" style="text-align: right;">
-                    <a href="http://localhost:8080/hilariocurso/Equipo1/app_web/vistas/formulario_consultas.php" class="btn btn-danger btn-lg">Volver</a>
+                    <a href="../vista/formulario_consultas.php" class="btn btn-danger btn-lg">Volver</a>
                 </div> 
         </div>
     </div>

@@ -1,5 +1,5 @@
 <?php
-require_once "../config.php";
+require_once "../../config.php";
 
 // Creamos la funcion limpiar_dato
 function limpiar_datos($data){
@@ -26,7 +26,7 @@ function consulta() {
             echo'Todos los campos son obligatorios';
         } else {
             $productos = consultar_productos($id);
-            require VIEW_PATH . "../vistas/pantalla_consultar.php";
+            require PRODUCTOS_PATH . "../vista/pantalla_consultar.php";
         }
     }
 }
