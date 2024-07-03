@@ -9,21 +9,21 @@
 
 </head>
 <body class="bg-body-secondary ">
-    <div class="container" style="margin-top: 15%;">
-        <div class="card p-5">
+    <div class="container" style="margin-top: 25%;">
+        <div class="card p-4">
             <div>
                 <h2 style="text-align: center;">Consultas</h2>
             </div>            
-            <div class="btn-group btn-group-justified" style="padding-top: 5%;">
+            <div class="btn-group btn-group-justified" style="padding-top: 2%;">
                     <a href="" class="btn btn-success">Alta</a>                    
                     <a href="" class="btn btn-danger">Baja</a>
-                    <a href="" class="btn btn-secondary">Listar</a>
                     <a href="" class="btn btn-warning">Modificacciones</a>
                     <a href="../Productos/vista/formulario_consultas.php" class="btn btn-primary">Consultas</a>
+                    <a href="" class="btn btn-secondary">Listar</a>
+                    <a href="../index.php" class="btn btn-primary">Inicio</a>
             </div>
         </div>
     </div>
-    <script src="../../../AprendiendoBootstrap/Bootstrap3/intro/js/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

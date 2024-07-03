@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de contacto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/css.css">
+    <title>Consulta de producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 border">
-                <br>
-                <h3>Id del contacto</h3>
-                <form action="../controlador/controlador_productos.php?action=consultar" method="POST">
-                    <div class="form-group">
-                        <label for="id">id_producto:</label>
-                        <input class="form-control" id="id" name="id" type="number" placeholder="Id:">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary">Consulta</button>
+<body class="bg-body-secondary ">
+    <div class="container" style="margin-top: 25%;">
+        <div class="card p-3">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <h2>ID del producto</h2>
+                    <form action="../controlador/controlador_productos.php?action=consultar" method="POST">
+                        <div class="form-group">
+                            <label for="id">Id del producto:</label>
+                            <input class="form-control" id="id" name="id" type="number" placeholder="Id:">
                         </div>
-                        <div class="col-md-4 col-md-offset-4">
+                        <div class="btn-group btn-group-justified" style="padding-top: 5%;">
+                            <button type="submit" class="btn btn-primary">Consulta</button>
                             <a href="../index_productos.php" class="btn btn-success">Volver</a>
-                        </div> 
-                    </div>
-                </form>
+                            <a href="http://localhost:8080/hilariocurso/Equipo1/app_web_certi/index.php" class="btn btn-primary">Inicio</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <script src="../../../AprendiendoBootstrap/Bootstrap3/intro/js/jquery-3.7.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
