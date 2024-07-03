@@ -20,7 +20,7 @@
                         <div class="btn-group btn-group-justified" style="padding-top: 5%;">
                             <button type="submit" class="btn btn-primary">Consulta</button>
                             <a href="../index_productos.php" class="btn btn-success">Volver</a>
-                            <a href="http://localhost:8080/hilariocurso/Equipo1/app_web_certi/index.php" class="btn btn-primary">Inicio</a>
+                            <a href="../app_web_certi/index.php" class="btn btn-primary">Inicio</a>
                         </div>
                     </form>
                 </div>
