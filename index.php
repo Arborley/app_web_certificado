@@ -1,7 +1,7 @@
 <?php
 // index.php
 require_once 'config.php';
-require_once CONTROLLER_PATH . 'controlador_listar.php';
+require_once PRODUCTOS_PATH . 'controlador_listar.php';
 ?>
 
 <!DOCTYPE html>
