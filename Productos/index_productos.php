@@ -20,6 +20,7 @@
                     <a href="" class="btn btn-warning">Listar</a>
                     <a href="" class="btn btn-info">Modificacciones</a>
                     <a href="vistas/formulario_consultas.php" class="btn btn-success">Consultas</a>
+                    <a href="../index_productos.php"><button class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i>        Inicio</button></a>
             </div>
         </div>
     </div>
