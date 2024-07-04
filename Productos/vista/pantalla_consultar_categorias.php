@@ -7,6 +7,7 @@
     <title>Consulta de producto</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a7093f3be1.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-body-secondary ">
     <div class="container" style="margin-top: 15%;">
@@ -32,7 +33,7 @@
             </table>
             <div class="row">
                     <div class="col-md-12" style="text-align: right;">
-                        <a href="../vista/fm_consultas_categorias.php" class="btn btn-primary">Volver</a>
+                    <a href="../index_productos.php" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Volver</a>
                     </div> 
             </div>
         </div>
