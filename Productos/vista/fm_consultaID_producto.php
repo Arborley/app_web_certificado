@@ -20,11 +20,11 @@
 
     ?>
     <div class="formulario container mt-5 border border-dark mb-3 text-center card">
-        <h2>Consulta ID</h2>
+        <h2 class="lead" style="font-size: xx-large;"><strong>Consulta ID</strong></h2>
         <form action="../controlador/controlador_productos.php" method="POST">
             <input type="hidden" name="accion" value="consultarID">
             <div class="form-group">
-                <label for="id">¿Qué producto quieres usar?</label>
+                <label for="id" class="lead"><strong>¿Qué producto quieres usar?</strong></label>
                 <input type="number" class="form-control" id="id" name="id" placeholder="Id:">
             </div>
             <div class="form-group text-center my-3">

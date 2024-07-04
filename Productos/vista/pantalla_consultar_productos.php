@@ -13,29 +13,29 @@
 <body class="bg-body-secondary ">
     <div class="container" style="margin-top: 15%;">
         <div class="card p-4">
-            <h2 style="text-align: center;">Consulta de producto</h2>
+            <h2 style="font-size: xx-large; text-align: center;" class="lead"><strong>Consulta de producto</strong></h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Impuesto</th>
-                        <th>Categoría</th>
-                        <th>Iva</th>
+                        <th class="lead"><strong>Id</strong></th>
+                        <th class="lead"><strong>Nombre</strong></th>
+                        <th class="lead"><strong>Descripción</strong></th>
+                        <th class="lead"><strong>Precio</strong></th>
+                        <th class="lead"><strong>Impuesto</strong></th>
+                        <th class="lead"><strong>Categoría</strong></th>
+                        <th class="lead"><strong>Iva</strong></th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($productos as $producto): ?>                    
                         <tr>
-                            <td><?php echo htmlspecialchars($producto["id_producto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["producto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["descripcion"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["precio"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["impuesto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["categoria"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["tasa_iva"]); ?></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["id_producto"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["producto"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["descripcion"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["precio"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["impuesto"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["categoria"]); ?></strong></td>
+                            <td class="lead"><strong><?php echo htmlspecialchars($producto["tasa_iva"]); ?></strong></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

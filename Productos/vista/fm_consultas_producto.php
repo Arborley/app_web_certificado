@@ -12,10 +12,10 @@
         <div class="card p-3">
             <div class="row">
                 <div class="col-md-4 mx-auto">
-                    <h2>ID del producto</h2>
+                    <h2 class="lead" style="font-size: xx-large;"><strong>ID del producto</strong></h2>
                     <form action="../controlador/controlador_productos.php?action=consultar" method="POST">
                         <div class="form-group">
-                            <label for="id">Id del producto:</label>
+                            <label for="id" class="lead"><strong>Id del producto:</strong></label>
                             <input class="form-control" id="id" name="id" type="number" placeholder="Id:">
                         </div>
                         <div class="btn-group btn-group-justified" style="padding-top: 5%;">
