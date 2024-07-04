@@ -7,34 +7,47 @@
     <title>Alta de productos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a7093f3be1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h2 class="text-center mb-4">Formulario de alta de productos</h2>
-                <form action="../controlador/controlador_alta_productos.php" method="POST">
-                    <div>
-                        <label for="nombre">Producto:</label>
-                        <input type="text" id="nombre" name="nombre"><br><br>
 
-                        <label for="precio">Precio:</label>
-                        <input type="number" id="precio" name="precio"><br><br>
-
-                        <label for="descripcion">Descripción:</label>
-                        <input type="text" id="descripcion" name="descripcion"><br><br>
-
-                        <label for="categoria">:</label>
-                        <input type="text" id="categoria" name="categoria"><br><br>
-                        
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-4">Enviar</button>
-                </form>
-            </div>
+    <div class="">
+        <div class="bg-white container mt-5 pb-3 card text-center card">
+            <h2 class="mt-3">Insertar productos</h2>
+            <form action="../controlador/controlador_productos.php" method="POST">
+                <input type="hidden" name="accion" value="alta">
+                <div class="form-group d-flex mt-3">
+                    <label class="col-md-2" for="nombre">Producto:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control w-75" placeholder="Producto">
+                </div>
+                <div class="form-group d-flex mt-3">
+                    <label class="col-md-2" for="descripcion">Descripcion:</label>
+                    <input type="text" id="descripcion" name="descripcion" class="form-control w-75" placeholder="Descripcion">
+                </div>
+                <div class="form-group d-flex mt-3">
+                    <label class="col-md-2" for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" class="form-control w-75" placeholder="Precio">
+                </div>
+                <div class="form-group d-flex mt-3">
+                    <label class="col-md-2" for="impuesto">Impuesto:</label>
+                    <input type="text" id="impuesto" name="impuesto" class="form-control w-75" placeholder="Impuesto">
+                </div>
+                <div class="form-group d-flex mt-3">
+                    <label class="col-md-2" for="categoria">Categoría:</label>
+                    <input type="text" id="id_categoria" name="id_categoria" class="form-control w-75" placeholder="Categoría">
+                </div>
+                <div class="">
+                    <button type="submit" class="btn btn-primary btn-block mt-4">
+                        <i class="fa-regular fa-paper-plane"></i> Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="text-center mt-5">
+            <a href="../index_productos.php"><button class="btn btn-primary">
+                    <i class="fa-solid fa-arrow-left"></i>        Inicio</button></a>
         </div>
     </div>
-    <div>
-        <a href="../index.php"><button class="btn btn-danger">Volver a Inicio</button></a>
-    </div>
 </body>
+
+</html>
