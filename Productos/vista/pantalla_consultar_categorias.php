@@ -11,28 +11,20 @@
 <body class="bg-body-secondary ">
     <div class="container" style="margin-top: 15%;">
         <div class="card p-4">
-            <h2 style="text-align: center;">Consulta de producto</h2>
+            <h2 style="text-align: center;">Consulta de categoria</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id_producto</th>
+                        <th>Id</th>
                         <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Impuesto</th>
-                        <th>Categoría</th>
                         <th>Iva</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($productos as $producto): ?>                    
+                    <?php foreach ($productos as $producto): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($producto["id_producto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["producto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["descripcion"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["precio"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["impuesto"]); ?></td>
-                            <td><?php echo htmlspecialchars($producto["categoria"]); ?></td>
+                            <td><?php echo htmlspecialchars($producto["id_categoria"]); ?></td>
+                            <td><?php echo htmlspecialchars($producto["nombre"]); ?></td>
                             <td><?php echo htmlspecialchars($producto["tasa_iva"]); ?></td>
                         </tr>
                     <?php endforeach; ?>
@@ -40,7 +32,7 @@
             </table>
             <div class="row">
                     <div class="col-md-12" style="text-align: right;">
-                        <a href="../vista/formulario_consultas.php" class="btn btn-primary">Volver</a>
+                        <a href="../vista/fm_consultas_categorias.php" class="btn btn-primary">Volver</a>
                     </div> 
             </div>
         </div>

@@ -22,7 +22,5 @@ define('CLIENTES_CONTROLLER_PATH', CLIENTES_PATH . '/controlador');
 define('PRODUCTOS_MODEL_PATH', PRODUCTOS_PATH . '/modelo');
 define('PRODUCTOS_VIEW_PATH', PRODUCTOS_PATH . '/vista');
 define('PRODUCTOS_CONTROLLER_PATH', PRODUCTOS_PATH . '/controlador');
-// Incluir archivo de conexión a la base de datos
-require_once __DIR__ . '/conexion.php';
 
-
+?>

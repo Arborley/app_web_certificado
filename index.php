@@ -114,7 +114,7 @@
                 <img src="img/clientes_azul.png" alt="Clientes">
                 <div class="btn-text">Clientes</div>
             </a>
-            <a href="http://localhost:8080/hilariocurso/Equipo1/app_web_certi/Productos/index_productos.php" class="btn-image">
+            <a href="productos/index_productos.php" class="btn-image">
                 <img src="img/productos_azul.png" alt="Productos">
                 <div class="btn-text">Productos</div>
             </a>
@@ -126,4 +126,3 @@
 </body>
 
 </html>
-
