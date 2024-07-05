@@ -21,17 +21,18 @@ $borrar_producto = 'borrar_producto.php?id=';
     $eliminar_producto = 'fm_eliminar_producto.php?id=';
     ?>
     <div class="container-fluid mt-5 w-75">
-        <h2 class="text-center lead" style="font-size: xx-large;"><strong>Listado de Productos</strong></h2>
+        <h2 class="text-center lead" style="font-size: xx-large;" ><strong>Listado de Productos</strong></h2>
         <table class="table table-bordered text-center">
             <thead>
                 <tr>
-                    <th class="lead"><strong>Id_producto</strong></th>
-                    <th class="lead"><strong>Id_categoría</strong></th>
-                    <th class="lead"><strong>Nombre</strong></th>
-                    <th class="lead"><strong>Descripción</strong></th>
-                    <th class="lead"><strong>Precio</strong></th>
-                    <th class="lead"><strong>Impuesto</strong></th>
-                    <th class="lead"><strong>Acciones</strong></th>
+                    <th class="lead" ><strong>Id_producto</strong></th>
+                    <th class="lead" ><strong>Id_categoría</strong></th>
+                    <th class="lead" ><strong>Nombre</strong></th>
+                    <th class="lead" ><strong>Descripción</strong></th>
+                    <th class="lead" ><strong>Precio</strong></th>
+                    <th class="lead" ><strong>Impuesto</strong></th>
+                    <th class="lead"><strong>Activo</strong></th>
+                    <th class="lead" ><strong>Acciones</strong></th>
                 </tr>
             </thead>
             <tbody>
@@ -43,32 +44,12 @@ $borrar_producto = 'borrar_producto.php?id=';
                     <tr class="bg-alert-danger">
                         
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['id_producto']); ?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['id_categoria'])?></strong></td>
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['id_categoria'])?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['nombre']); ?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['descripcion'])?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['precio'])?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['impuesto'])?></strong></td>
-                        <td class="lead"><strong><a href="<?php echo $actualizar_producto . $producto['id_producto'] ;?>">
-                                <button class="btn btn-secondary max-width text-white">
-                                    <i class="fa fa-pencil"></i>
-                                </button>
-                            </a>
-                            <a href="<?php echo $eliminar_producto . $producto['id_producto'] ;?>">
-                                <button class="btn btn-secondary text-white">
-                                <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </a></strong></td>
-                    </tr>
-                    <?php
-                    }else{
-                    ?>
-                    <tr class="bg-alert-danger">
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['id_producto']); ?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['id_categoria'])?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['nombre']); ?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['descripcion'])?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['precio'])?></strong></td>
-                        <td class="lead"><strong><?php echo htmlspecialchars($producto['impuesto'])?></strong></td>
+                        <td class="lead"><strong><?php echo htmlspecialchars($producto['activo'])?></strong></td>
                         <td class="lead"><strong><a href="<?php echo $actualizar_producto . $producto['id_producto'] ;?>">
                                 <button class="btn btn-secondary max-width text-white">
                                     <i class="fa fa-pencil"></i>
@@ -79,7 +60,29 @@ $borrar_producto = 'borrar_producto.php?id=';
                                 <i class="fa-solid fa-trash"></i>
                                 </button>
                             </a></strong>
-                            
+                        </td>
+                    </tr>
+                    <?php
+                    }else{
+                    ?>
+                    <tr class="bg-alert-danger">
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['id_producto']);?></strong></td>
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['id_categoria'])?></strong></td>
+                        <td class="lead"><strong><?php echo htmlspecialchars($producto['nombre']);?></strong></td>
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['descripcion'])?></strong></td>
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['precio'])?></strong></td>
+                        <td class="lead" ><strong><?php echo htmlspecialchars($producto['impuesto'])?></strong></td>
+                        <td class="lead"><strong><?php echo htmlspecialchars($producto['activo'])?></strong></td>
+                        <td class="lead" ><strong><a href="<?php echo $actualizar_producto . $producto['id_producto'] ;?>">
+                                <button class="btn btn-secondary max-width text-white">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </a>
+                            <a href="<?php echo $eliminar_producto . $producto['id_producto'] ;?>">
+                                <button class="btn btn-secondary text-white">
+                                <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </a></strong>
                         </td>
                     </tr>
                     <?php
@@ -93,7 +96,7 @@ $borrar_producto = 'borrar_producto.php?id=';
         <a href="../index_productos.php">
             <button class="btn btn-primary sm">
                 <i class="fa-solid fa-arrow-left"></i>
-                Volver a inicio
+                Inicio
             </button>
         </a>
     </div>
