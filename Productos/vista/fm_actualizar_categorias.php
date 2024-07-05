@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar Producto</title>
+    <title>Actualizar Categoría</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a7093f3be1.js" crossorigin="anonymous"></script>
 </head>
@@ -21,7 +21,7 @@
         <div class="bg-white container mt-5 border border-dark pb-3 card">
             <form action="../controlador/controlador_productos.php" method="post">
                 <input type="hidden" name="accion" value="actualizar">
-                <h2 class="text-center mt-3">Actualizar Producto</h2>
+                <h2 class="text-center mt-3 lead" style="font-size: xx-large;"><strong>Actualizar Categoría</strong></h2> 
                 <div class="d-flex">
                     <label class="col-md-2" for="id_producto">ID:</label>
                     <input name="id_producto" class="form-control w-75" value="<?php echo $producto['id_producto'] ?>" readonly>

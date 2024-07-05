@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-6" style="margin-top: 5%;">
             <div class="text-center">
-                <h1>Productos</h1>
+                <h1 class="lead" style="font-size: xx-large;" ><strong>Productos</strong></h1>
                 <div class="">
                     <div class="mt-3">
                         <a href="vista/fm_alta_producto.php" class="btn btn-primary" style="width: 30%;">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <h2>Categorias</h2>
+                <h2 class="lead" style="font-size: xx-large;" ><strong>Categorias</strong></h2>
                 <div class="">
                     <div class="mt-3">
                         <a href="vista/formulario_altas.php" class="btn btn-primary" style="width: 30%;">
