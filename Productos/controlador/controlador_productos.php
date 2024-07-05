@@ -67,11 +67,19 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
                 $precio = limpiar_dato($_POST['precio']);
                 $impuesto = limpiar_dato($_POST['impuesto']);
                 $id_categoria = limpiar_dato($_POST['id_categoria']);
+
+                if(isset($_POST['activo']) == '1'){
+                    $activo = "1";
+                }elseif(isset($_POST['activo'])== '0'){
+                    $activo = '0';
+                }
                 if (empty($nombre) || empty($descripcion) || empty($precio) || empty($impuesto) || empty($id_categoria)) {
                     echo 'Todos los datos son obligatorios';
                 } else {
-                    actualizar_producto($id, $nombre, $descripcion, $precio, $impuesto, $id_categoria);
-                    echo '¡Producto actualizado correctamente!';
+                    actualizar_producto($id, $nombre, $descripcion, $precio, $impuesto, $id_categoria, $activo);
+                    
+                    header("Location: ../vista/listado_productos.php");
+                    echo 'Categoria actualizada correctamente!';
                 }
                 break;
             case 'listar':

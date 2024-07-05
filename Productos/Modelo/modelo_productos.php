@@ -23,9 +23,9 @@ function eliminar_producto($id){
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 //Función para actualizar los productos recibiendo los datos del formulario por parámetro y guardandolos en la base de datos.
-function actualizar_producto($id, $nombre, $descripcion, $precio, $impuesto, $id_categoria){
+function actualizar_producto($id, $nombre, $descripcion, $precio, $impuesto, $id_categoria, $activo){
     $pdo = conectarBD();
-    $stmt = $pdo->query("UPDATE productos set nombre = '$nombre', descripcion = '$descripcion', precio = '$precio', impuesto = '$impuesto', id_categoria = '$id_categoria' where id_producto = '$id'");
+    $stmt = $pdo->query("UPDATE productos set nombre = '$nombre', descripcion = '$descripcion', precio = '$precio', impuesto = '$impuesto', id_categoria = '$id_categoria', activo = '$activo' where id_producto = '$id'");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 //Función para limpiar el dato obtenido en el formulario

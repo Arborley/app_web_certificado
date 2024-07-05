@@ -46,7 +46,11 @@
                     <label class="col-md-2 lead" for="id_categoria"><strong>id_categoria:</strong></label>
                     <input type="text" class="form-control w-75" id="id_categoria" name="id_categoria" value="<?php echo $producto['id_categoria'] ?>">
                 </div>
-
+                <div class="d-flex mt-3">
+                    <label class="lead" > <strong>Activo</strong>   
+                        <input type="checkbox" id="activo" name="activo" class="activo" value="1" 
+                        <?php if($producto['activo']  == '1'){?> checked <?php }else{}?>>  </label>
+                </div>
                 <div class="text-center mt-3">
                     <button type="submit" class="btn btn-success">
                         <i class="fa-regular fa-paper-plane"></i>

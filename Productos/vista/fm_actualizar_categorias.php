@@ -38,7 +38,6 @@
                     <label class="lead" > <strong>Activo</strong>   
                         <input type="checkbox" id="activo" name="activo" class="activo" value="1" 
                         <?php if($categoria['activo']  == '1'){?> checked <?php }else{}?>>  </label>
-                    
                 </div>
                 <div class="text-center mt-3">
                     <button type="submit" class="btn btn-success sm">

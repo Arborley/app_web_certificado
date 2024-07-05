@@ -31,6 +31,7 @@ $borrar_producto = 'borrar_producto.php?id=';
                     <th class="lead" ><strong>Descripción</strong></th>
                     <th class="lead" ><strong>Precio</strong></th>
                     <th class="lead" ><strong>Impuesto</strong></th>
+                    <th class="lead"><strong>Activo</strong></th>
                     <th class="lead" ><strong>Acciones</strong></th>
                 </tr>
             </thead>
@@ -48,6 +49,7 @@ $borrar_producto = 'borrar_producto.php?id=';
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['descripcion'])?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['precio'])?></strong></td>
                         <td class="lead"><strong><?php echo htmlspecialchars($producto['impuesto'])?></strong></td>
+                        <td class="lead"><strong><?php echo htmlspecialchars($producto['activo'])?></strong></td>
                         <td class="lead"><strong><a href="<?php echo $actualizar_producto . $producto['id_producto'] ;?>">
                                 <button class="btn btn-secondary max-width text-white">
                                     <i class="fa fa-pencil"></i>
@@ -70,6 +72,7 @@ $borrar_producto = 'borrar_producto.php?id=';
                         <td class="lead" ><strong><?php echo htmlspecialchars($producto['descripcion'])?></strong></td>
                         <td class="lead" ><strong><?php echo htmlspecialchars($producto['precio'])?></strong></td>
                         <td class="lead" ><strong><?php echo htmlspecialchars($producto['impuesto'])?></strong></td>
+                        <td class="lead"><strong><?php echo htmlspecialchars($producto['activo'])?></strong></td>
                         <td class="lead" ><strong><a href="<?php echo $actualizar_producto . $producto['id_producto'] ;?>">
                                 <button class="btn btn-secondary max-width text-white">
                                     <i class="fa fa-pencil"></i>
