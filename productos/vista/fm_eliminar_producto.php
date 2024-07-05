@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a7093f3be1.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class = "bg-secondary">
@@ -43,9 +43,9 @@
         </div>
         <div class="container text-center mt-5 ">
             <a href="listado_productos.php">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary w-25">
                     <i class="fa-solid fa-arrow-left"></i>
-                    Listado de Productos
+                    Volver a listado de productos
                 </button>
             </a>
         </div>

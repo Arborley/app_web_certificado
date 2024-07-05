@@ -12,17 +12,15 @@ if (isset($_POST['id_producto'])) {
 if (isset($_GET['id_producto'])) {
     $id = $_GET['id_producto'];
 }
-if (isset($_GET['action'])) {
+if(isset($_GET['action'])){
     $action = $_GET['action'];
 
-
-    switch ($action) {
-        case 'consultar':
-            consulta();
-            break;
-    }
+switch($action) {
+    case'consultar':
+    consulta();
+    break;
 }
-
+}
 
 
 
@@ -41,9 +39,13 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
                 if (empty($nombre) || empty($descripcion) || empty($precio) || empty($impuesto) || empty($id_categoria)) {
                     echo 'Todos los datos son obligatorios';
                     echo '<br>';
-                    echo '<a href="../vista/formulario_altas.php"><button class="btn btn-primary w-25"><i class="fa-solid fa-arrow-left"></i>
-                    Volver a listado de productos</button></a>';
-                } else {
+                    echo '<a href="../vista/formulario_altas.php">
+                <button class="btn btn-primary w-25">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Volver a listado de productos
+                </button>
+            </a>';
+                }else{
                     insertar_productos($nombre, $id_categoria, $precio, $descripcion, $impuesto);
                     echo 'Producto añadido correctamente!';
                     header("Location: ../vista/listado_productos.php");
@@ -53,9 +55,6 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
             case 'eliminar':
                 if (empty($id)) {
                     echo 'El campo ID es obligotio';
-                    echo '<br>';
-                    echo '<a href="../vista/formulario_altas.php"><button class="btn btn-primary w-25"><i class="fa-solid fa-arrow-left"></i>
-                    Volver a listado de productos</button></a>';
                 } else {
                     eliminar_producto($id);
                     echo '¡Producto eliminado correctamente!';
@@ -93,11 +92,11 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
                         switch ($boton) {
                             case 'borrarid':
 
-                                header("Location: ../vista/fm_eliminar_producto.php?id=$id");
+                                header("Location: ../vista/formulario_eliminar.php?id=$id");
                                 break;
                             case 'modificarid':
                                 // Redirigir a la página de modificar con el ID correspondiente
-                                header("Location: ../vista/fm_actualizar_producto.php?id=$id");
+                                header("Location: ../vista/formulario_actualizar.php?id=$id");
                                 break;
                             case 'consultarid':
                                 // Redirigir a la página de consultar con el ID correspondiente

@@ -66,7 +66,7 @@ function consulta() {
             echo'Todos los campos son obligatorios';
         } else {
             $productos = consultar_productos($id);
-            require PRODUCTOS_PATH . "../vista/pantalla_consultar.php";
+            require PRODUCTOS_PATH . "../vista/pantalla_consultar_productos.php";
         }
     }
 }

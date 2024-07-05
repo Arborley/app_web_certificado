@@ -56,9 +56,9 @@
         </div>
         <div class="container text-center mt-5 ">
             <a href="listado_productos.php">
-                <button class="btn btn-primary sm">
+                <button class="btn btn-primary w-25">
                 <i class="fa-solid fa-arrow-left"></i>
-                    Listado de Productos
+                    Volver a listado de productos
                 </button>
             </a>
         </div>

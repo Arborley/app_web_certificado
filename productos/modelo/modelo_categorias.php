@@ -1,6 +1,5 @@
 <?php
-require_once "../../conexion.php";
-include_once "modelo_productos.php";
+
 //Función para obtener los datos por el id
 function obtener_categorias_por_id($id){
     $pdo = conectarBD();
@@ -11,7 +10,7 @@ function obtener_categorias_por_id($id){
 //Función para insertar en la tabla categorias
 function insertar_categorias($nombre, $tasa_iva ){
     $pdo = conectarBD();
-    $stmt = $pdo->query("INSERT INTO categorias (nombre, tasa_iva, activo) VALUES ('$nombre', '$tasa_iva', 1)");
+    $stmt = $pdo->query("INSERT INTO productos (nombre, tasa_iva, activo) VALUES ('$nombre', '$tasa_iva', 1)");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 //Función para "eliminar" la categoria recibiendo la id de la categoria.
@@ -59,5 +58,4 @@ function consultar() {
         }
     }
 }
-
 ?>
